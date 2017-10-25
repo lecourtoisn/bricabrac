@@ -2,7 +2,7 @@ from collections import Counter
 from itertools import product
 
 nb_dice = 2
-skill = 55
+skill = 49
 focus = True
 
 array = [sum(a) + (nb_dice if focus and r < skill else 0) for a in product(range(1, 11), repeat=nb_dice) for r in
